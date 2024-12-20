@@ -1,0 +1,65 @@
+.image-container0 {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the image container */
+    align-items: center;
+    position: relative; /* Needed for absolute positioning of arrows */
+    flex-direction: column; /* Arrange elements vertically */
+  }
+  
+  .image-container0 img {
+    width: 100%;
+    height: 40rem;
+    border-radius: 20px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .overlay-text0 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 80%;
+    left:40%;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 20px;
+    box-sizing: border-box; 
+  }  
+  
+  .arrows0 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between; /* Positions the arrows at the left and right */
+    width: 100%;
+    transform: translateY(-50%); /* Vertically center the arrows */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container0:hover .arrows0 {
+    opacity: 1;
+  }
+  .image-wrapper:hover .overlay0 {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .arrow:hover {
+    background-color: rgb(30, 167, 185);
+  }
+  
